@@ -20,6 +20,7 @@
   <inceptionYear>2011</inceptionYear>
 
   <modules>
+    <module>deployer</module>
     <module>actionbarsherlock</module>
     <module>actionbarsherlock-fest</module>
     <module>actionbarsherlock-i18n</module>
@@ -69,11 +70,11 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
     <java.version>1.6</java.version>
-    <android.platform>14</android.platform>
 
     <!-- Compilation dependencies -->
-    <android.version>4.0.1.2</android.version>
-    <android-support.version>r7</android-support.version>
+    <android.version>4.2_r1</android.version>
+    <android.platform>17</android.platform>
+    <android-support.version>r13</android-support.version>
     <fest.android.version>1.0.4</fest.android.version>
 
     <!-- Sample dependencies -->
@@ -89,7 +90,7 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.google.android</groupId>
+        <groupId>android</groupId>
         <artifactId>android</artifactId>
         <version>${android.version}</version>
       </dependency>
@@ -151,7 +152,7 @@
         <plugin>
           <groupId>com.jayway.maven.plugins.android.generation2</groupId>
           <artifactId>android-maven-plugin</artifactId>
-          <version>3.5.3</version>
+          <version>3.6.0</version>
           <configuration>
             <nativeLibrariesDirectory>ignored</nativeLibrariesDirectory>
             <sdk>
