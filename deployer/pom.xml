@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.actionbarsherlock</groupId>
+        <artifactId>parent</artifactId>
+        <version>4.3.2-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <artifactId>deployer</artifactId>
+    <name>Actionbar Sherlock Deployer</name>
+    <packaging>pom</packaging>
+    <version>4.3.1</version>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>2.3.1</version>
+                <executions>
+                    <execution>
+                        <id>android-4.2_r1</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                        <configuration>
+                            <groupId>android</groupId>
+                            <artifactId>android</artifactId>
+                            <packaging>jar</packaging>
+                            <version>4.2_r1</version>
+                            <file>android-4.2_r1.jar</file>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>android-support-v4-r13</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                        <configuration>
+                            <groupId>com.google.android</groupId>
+                            <artifactId>support-v4</artifactId>
+                            <packaging>jar</packaging>
+                            <version>r13</version>
+                            <file>android-support-v4-r13.jar</file>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
