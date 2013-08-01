@@ -35,7 +35,7 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>android-support-v4-r13</id>
+                        <id>android-support-v4-r18</id>
                         <phase>install</phase>
                         <goals>
                             <goal>install-file</goal>
@@ -44,8 +44,8 @@
                             <groupId>com.google.android</groupId>
                             <artifactId>support-v4</artifactId>
                             <packaging>jar</packaging>
-                            <version>r13</version>
-                            <file>android-support-v4-r13.jar</file>
+                            <version>r18</version>
+                            <file>android-support-v4-r18.jar</file>
                         </configuration>
                     </execution>
                 </executions>
